@@ -1,42 +1,54 @@
-# 🍽️ Restaurant Management App
+# 🍽️ Restaurant-APP
 
-This is a microservices-based Restaurant Management Application developed using **Java**, **Spring Boot**, and **Spring Cloud**. The project provides APIs for handling restaurant-related data such as menus, orders, customers, and employees.
+A **Spring Boot** application that serves as the backend system for managing core functionalities of a restaurant—ranging from restaurant details, employees, to menu management. This project is ideal for learning **Spring Boot REST APIs**, **modular code architecture**, and backend best practices.
 
-## 📁 Project Structure
+---
 
-This project follows a modular microservice architecture. It includes the following core modules:
+## 📌 Features
 
-- `restaurant-service`: Handles restaurant information and operations
-- `menu-service`: Manages menu items and categories
-- `order-service`: Manages customer orders and statuses
-- `employee-service`: Maintains employee records
-- `api-gateway`: Routes requests to appropriate services
-- `service-registry`: Eureka-based service discovery
-- `config-server`: Centralized configuration management
+- 📋 **Restaurant Management**  
+  Add, update, delete, and fetch restaurant details.
 
-## 🔧 Technologies Used
+- 👥 **Employee Management**  
+  Handle employee data including roles and associations with specific restaurants.
 
-- Java 17
-- Spring Boot
-- Spring Cloud (Eureka, Gateway, Config)
-- REST APIs
-- Maven
-- IntelliJ IDEA
-- Git & GitHub
+- 🍔 **Menu Management**  
+  Add items to the menu, update pricing, and associate them with specific restaurants.
 
-## 🚀 Features
+- ❌ **Exception Handling**  
+  Clean error messages for invalid operations using custom exception classes.
 
-- CRUD operations for restaurants, menus, employees, and orders
-- Service discovery using Eureka Server
-- API Gateway for routing and load balancing
-- Centralized configuration using Spring Cloud Config
-- Modular microservices structure
-- Environment-specific property management
+- 📦 **Modular Codebase**  
+  Clean separation of controller, service, repository, and model layers.
 
-## 🏗️ Getting Started
+---
 
-1. Clone the repository:
+## 🚀 Tech Stack
 
-   ```bash
-   git clone https://github.com/Rishitha-Ballem/Restaurant-APP.git
-   cd Restaurant-APP
+| Technology       | Description                  |
+|------------------|------------------------------|
+| Java 17          | Programming Language         |
+| Spring Boot      | REST API Framework           |
+| Spring Data JPA  | Database Access Layer        |
+| Maven            | Build & Dependency Manager   |
+| IntelliJ / VS Code | IDE                         |
+| Git & GitHub     | Version Control              |
+
+---
+
+## 🧱 Project Structure
+
+Restaurant-APP/
+│
+├── src/main/java/com/restaurant/
+│ ├── controller/ → REST APIs
+│ ├── service/ → Business logic
+│ ├── repository/ → JPA interfaces
+│ ├── model/ → Entities (Restaurant, Employee, MenuItem)
+│ └── exception/ → Custom exceptions
+│
+├── src/main/resources/
+│ ├── application.properties
+│
+├── pom.xml → Maven configuration
+└── README.md

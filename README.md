@@ -52,3 +52,28 @@ Restaurant-APP/
 │
 ├── pom.xml → Maven configuration
 └── README.md
+🧪 Sample Endpoints
+POST /api/restaurants – Add new restaurant
+
+GET /api/restaurants – Get all restaurants
+
+POST /api/employees – Add new employee
+
+GET /api/menu/{restaurantId} – Fetch menu for a restaurant
+
+🌱 Future Enhancements
+✅ Integrate PostgreSQL or MySQL
+
+🔐 Add Spring Security for authentication
+
+📊 Swagger API documentation
+
+🌐 Frontend integration (React or Angular)
+
+☁️ Deploy to cloud (Heroku / AWS)
+
+👩‍💻 Author
+Rishitha Ballem
+Passionate Java & Spring Boot developer building full-stack and scalable systems.
+📌 GitHub | 💼 Open to Collaboration!
+
